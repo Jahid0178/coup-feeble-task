@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Header from "@/components/layout/Header/Header";
 import "./globals.css";
 
 // General Sans font
@@ -32,7 +33,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${generalSans.className} antialiased`}>
-        <main>{children}</main>
+        <Header />
+        <main className="max-h-[calc(100dvh-67px)]">{children}</main>
       </body>
     </html>
   );
