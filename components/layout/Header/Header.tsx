@@ -5,7 +5,7 @@ import HeaderNavigation from "./HeaderNavigation";
 
 const Header = () => {
   return (
-    <header className="max-w-[1200px] h-[81px] mx-auto pl-6 pr-5 py-5 border rounded-[200px] fixed top-10 left-0 right-0 z-20 shadow-xs">
+    <header className="bg-white max-w-[1200px] h-[81px] mx-auto pl-6 pr-5 py-5 rounded-[200px] fixed top-10 left-0 right-0 z-20 shadow-xs">
       <div className="flex items-center justify-between">
         <Logo />
         <HeaderNavigation />

@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${generalSans.className} antialiased`}>
         <Header />
-        <main className="max-h-[calc(100dvh-67px)]">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
