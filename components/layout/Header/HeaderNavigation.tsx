@@ -10,7 +10,7 @@ const HeaderNavigation = () => {
           <li key={navigation.title}>
             <Link
               href={navigation.href}
-              className="px-2 py-3 text-base font-medium text-secondary"
+              className="px-2 py-3 text-base font-medium text-gray-500 hover:text-gray-900"
             >
               {navigation.title}
             </Link>
