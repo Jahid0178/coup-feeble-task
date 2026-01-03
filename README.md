@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Feeble Hero Section Implementation
 
-## Getting Started
+A pixel-perfect implementation of the Feeble Hero Section. This project demonstrates high-fidelity UI replication, advanced animation orchestration, and clean, maintainable code.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Link:** https://coup-feeble-task.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion (Motion 12+)
+- **Deployment:** Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎬 Animation & Interaction Strategy
 
-## Learn More
+To meet Feeble's standard for "Execution Excellence," I implemented a layered animation system designed for depth and narrative flow.
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Parallax & Layered Entrance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In the `HeroScenery` component, I used a **Z-axis layering strategy** (z-10 through z-40).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **The Motion:** The background container uses a `circOut` easing over 1.5s for a "smooth landing" effect.
+- **Visual Depth:** By staggering opacity (10%–15%) and scaling layers (shape-1 to shape-4), I created atmospheric depth that frames the content without distracting the user.
 
-## Deploy on Vercel
+### 2. Kinetic "Bird" System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I built a modular `Bird` component to handle both static and dynamic environmental details:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Ambient Birds:** Fixed elements with speech bubbles to add personality to the business-centric theme.
+- **Dynamic Pathing:** In `AnimationBirds`, I used viewport-relative units (`vw/vh`) to animate birds crossing the screen.
+- **Directional Logic:** Used `-scale-x-100` dynamically to ensure bird assets face their direction of travel.
+
+### 3. Performance & Usability
+
+- **GPU Acceleration:** All animations are handled by Framer Motion for 60fps performance.
+- **Responsive Layouts:** Used `hidden lg:block` to declutter the scene on mobile while maintaining visual richness on desktop.
+- **Interactivity Safety:** Implemented `pointer-events-none` on all decorative layers to ensure zero interference with CTAs and buttons.
+
+## ⚙️ Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Jahid0178/coup-feeble-task
+   ```
