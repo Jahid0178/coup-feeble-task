@@ -28,7 +28,7 @@ const HeroSection = () => {
               />
               #1 iMessage Automation Tool
             </Badge>
-            <h1 className="text-5xl md:text-[64px] font-bold my-6">
+            <h1 className="text-5xl md:text-[64px]/20 font-bold my-6">
               <span className="text-primary">iMessage</span> Automation for
               Teams and AI Workflows.
             </h1>
@@ -46,7 +46,10 @@ const HeroSection = () => {
               className="h-[46px] px-5 py-3 text-lg font-medium rounded-4xl bg-transparent border-gray-500"
             >
               <span className="border-r border-gray-500/50 pr-2">
-                <FaApple size={25} />
+                <FaApple
+                  size={25}
+                  style={{ width: 25, height: 25 }}
+                />
               </span>
               Download the Mac app
             </Button>
